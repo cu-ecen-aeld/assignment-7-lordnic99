@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 lordnic99
+=======
+aesd-private-repo
+>>>>>>> buildroot-assignments-base/master
