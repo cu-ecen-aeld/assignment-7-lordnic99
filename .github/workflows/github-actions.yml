@@ -1,26 +1,11 @@
 name: assignment-test
-<<<<<<< HEAD
-on: 
-=======
 on:
->>>>>>> buildroot-assignments-base/master
     push:
         tags-ignore:
             - '*'
         branches:
             - '*'
 jobs:
-<<<<<<< HEAD
-    unit-test:
-        container: cuaesd/aesd-autotest:unit-test
-        runs-on: self-hosted
-        steps:
-          - uses: actions/checkout@v2
-          - name: Checkout submodules
-            run : git submodule update --init --recursive
-          - name: Run unit test
-            run: ./unit-test.sh
-=======
     full-test:
         container: cuaesd/aesd-autotest:assignment4-buildroot
         runs-on: self-hosted
@@ -40,4 +25,3 @@ jobs:
             if: always()
             run: |
               ssh-add -D
->>>>>>> buildroot-assignments-base/master
