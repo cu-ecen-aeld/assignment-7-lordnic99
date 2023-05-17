@@ -89,7 +89,7 @@ int main(int argc, char *argv[]) {
   memset(&server, 0, sizeof(server));
   memset(&client, 0, sizeof(client));
   server.sin_port = htons(PORT_NUMBER);
-  server.sin_addr.s_addr = htonl(INADDR_LOOPBACK);
+  server.sin_addr.s_addr = htonl(INADDR_ANY);
   server.sin_family = AF_INET;
   if (bind(server_sock, (struct sockaddr *)&server, sizeof(server)) < 0) {
     perror("bind");
